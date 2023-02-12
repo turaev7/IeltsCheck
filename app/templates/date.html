@@ -1,0 +1,541 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+{% load static %}
+{%for i in Date%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IELTS</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.IELTS{
+    padding: 20px;
+
+}
+
+.IELTS .logo-box img{
+    width: 100px;
+}
+
+
+.IELTS .card-top{
+    border-bottom: 2px solid black;
+    padding: 15px 0;
+}
+
+.IELTS .card-top .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.IELTS .card-top .top .general-training{
+    border: 2px solid black;
+    padding: 5px 50px;
+}
+
+.IELTS .card-top .center .note-text{
+    font-style: italic;
+}
+
+.IELTS .card-top .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.IELTS .card-top .bottom .my-text-box{
+    display: flex;
+    align-items: center;
+}
+
+.IELTS .card-top .bottom .my-text-box .text{
+    margin-right: 20px;
+}
+
+.IELTS .card-top .bottom .my-text-box .box{
+    width: 130px;
+    border: 2px solid black;
+    height: 50px;
+}
+
+
+
+
+.IELTS .cadidate-details{
+    padding: 15px 0;
+}
+
+.IELTS .cadidate-details .top-info{
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+}
+
+.IELTS .cadidate-details .bottom-info{
+    border-bottom: 2px solid black;
+    padding: 10px 0;
+}
+
+.IELTS .cadidate-details .info-box .info .text{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.IELTS .cadidate-details .info-box .info .box{
+    width: 100%;
+    border: 2px solid black;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    padding-left: 10px;
+    background-color: #e5e5e5;
+}
+
+.IELTS .cadidate-details .avatar-box{
+    height: 100%;
+    border: 2px solid black;
+}
+
+.IELTS .test-result{
+    padding: 15px 0;
+    border-bottom: 2px solid black;
+}
+
+.IELTS .test-result .results-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.IELTS .test-result .result{
+    display: flex;
+    align-items: center;
+}
+
+.IELTS .test-result .result .text{
+    margin-right: 10px;
+}
+
+.IELTS .test-result .result .box{
+    border: 2px solid black;
+    width: 50px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e5e5;
+}
+
+.IELTS .administrator-comments{
+    padding: 15px 0;
+    border-bottom: 2px solid black;
+}
+
+.IELTS .administrator-comments .comment-box{
+    width: 100%;
+    border: 2px solid black;
+    height: 135px;
+}
+
+.IELTS .administrator-comments .logo-box{
+    border: 2px solid black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.IELTS .administrator-comments .imzo {
+    width: 100%;
+    border-bottom: 2px solid black;
+    margin-top: 55px;
+}
+
+
+.IELTS .administrator-comments .date-box {
+    width: 100%;
+    border: 2px solid black;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    padding-left: 10px;
+}
+
+.IELTS .administrator-comments .report-box {
+    width: 100%;
+    border: 2px solid black;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    padding-left: 10px;
+    background-color: #e5e5e5;
+}
+
+.IELTS .footer .logo-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.IELTS .footer .logo-box img{
+    width: 180px;
+}
+
+.IELTS .footer .logo-box img:nth-child(2){
+    margin: 0 30px;
+}
+
+
+
+
+    </style>
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+</head>
+
+<body>
+
+
+<div class="IELTS">
+
+    <div class="logo-box">
+        <img src="{% static 'app/img/IELTS-logo.png'%}" alt="">
+    </div>
+
+    <div class="card-top">
+
+        <div class="top my-1">
+            <h2 class="head-text font-weight-bold">Test Report Form</h2>
+            <h4 class="general-training d-flex align-items-center justify-content-center">GENERAL TRAINING</h4>
+        </div>
+
+        <div class="center my-1">
+            <div class="row">
+                <div class="col-1">
+                    <!-- <h3 class="note">NOTE</h3> -->
+                </div>
+                <div class="col-11">
+                    <!-- <h5 class="note-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorem eos ipsa ipsum
+                        iste labore officia perspiciatis ratione temporibus! Atque.
+                    </h5> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom my-1">
+            <div class="my-text-box">
+                <h3 class="text">Center Number</h3>
+                <h3 class="box"></h3>
+            </div>
+
+            <div class="my-text-box">
+                <h3 class="text">Date</h3>
+                <h5 class="box">{{ i.Date }}</h5>
+            </div>
+
+            <div class="my-text-box">
+                <h3 class="text">Candidate Number</h3>
+                <h3 class="box"></h3>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <div class="cadidate-details">
+
+        <div class="top-info">
+            <div class="info-box">
+                <div class="row">
+                    <div class="col-9">
+
+                        <h3 class="head-text font-weight-bold my-1 mb-3">Candidate Details</h3>
+
+                        <div class="info-box my-1">
+                            <div class="info">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h4 class="text">Family Name</h4>
+                                    </div>
+                                    <div class="col-9">
+                                        <h4 class="box">{{ i.familiya }}</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info my-1">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h4 class="text">First Name</h4>
+                                    </div>
+                                    <div class="col-9">
+                                        <h4 class="box">{{ i.ism }}</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info my-1">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h4 class="text">Candidate ID</h4>
+                                    </div>
+                                    <div class="col-9">
+                                        <h4 class="box w-50">1234567</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-3">
+                        <div class="avatar-box">
+                            <img src="{{ i.img.url }}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-info">
+            <div class="info-box">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="info-box my-1">
+
+                            <div class="info">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h4 class="text">Date of Birth</h4>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            
+                                            <div class="small-info">
+                                                <h4 style="width: 200px" class="box d-flex align-items-center justify-content-center">{{ i.FIO.birth }}</h4>
+                                            </div>
+
+                                            <div class="small-info d-flex align-items-center">
+                                                <h4 class="text">Sex (M/F)</h4>
+                                                <h4 class="ml-1 box d-flex align-items-center justify-content-center">{{ i.jinsi }}</h4>
+                                            </div>
+
+                                            <div class="small-info d-flex align-items-center">
+                                                <h4 class="text">Scheme Code</h4>
+                                                <h4 class="ml-1 box d-flex align-items-center justify-content-center">Private Candidate</h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h4 class="text">Country or Region of Origin</h4>
+                                    </div>
+                                    <div class="col-9">
+                                        <h4 class="box">{{ i.FIO.Country }}</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info my-1">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h4 class="text">Country of Nationality</h4>
+                                    </div>
+                                    <div class="col-9">
+                                        <h4 class="box">{{ i.FIO.millati }}</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info my-1">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h4 class="text">First Language</h4>
+                                    </div>
+                                    <div class="col-9">
+                                        <h4 class="box">Uzbek</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="test-result">
+
+        <h3 class="head-text font-weight-bold">Test Result</h3>
+
+        <div class="results-box">
+
+            <div class="result">
+                <h4 class="text">
+                    Listening
+                </h4>
+                <h4 class="box">
+                    {{ i.Listening }}
+                </h4>
+            </div>
+
+            <div class="result">
+                <h4 class="text">
+                    Reading
+                </h4>
+                <h4 class="box">
+                    {{ i.Reading }}
+                </h4>
+            </div>
+
+            <div class="result">
+                <h4 class="text">
+                    Writing
+                </h4>
+                <h4 class="box">
+                   {{ i.Writing }}
+                </h4>
+            </div>
+
+            <div class="result">
+                <h4 class="text">
+                    Speaking
+                </h4>
+                <h4 class="box">
+                    {{ i.Speaking }}
+                </h4>
+            </div>
+
+            <div class="result">
+                <h4 class="text">
+                   Overal <br> Band <br> Score
+                </h4>
+                <h4 class="box">
+                   {{ i.overal }}
+                </h4>
+            </div>
+
+            <div class="result">
+                <h4 class="text">
+                    CEFR <br> Level
+                </h4>
+                <h4 class="box">
+                    C1
+                </h4>
+            </div>
+
+        </div>
+    </div>
+    
+    
+    <div class="administrator-comments">
+        <div class="row">
+            <div class="col-7">
+                <h4 class="head-text">Administrator Comments</h4>
+                <div class="comment-box">
+                </div>
+            </div>
+
+            <div class="col-5">
+                <div class="row h-100">
+                    <div class="col-6">
+                        <div class="logo-box">
+                            <h5 class="text">Centre stamp</h5>
+                            <img src="{% static 'app/img/unnamed.png'%}" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="logo-box">
+                            <h5 class="text">Validation stamp</h5>
+                            <img src="{% static 'app/img/unnamed.png ' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-7">
+                <div class="row">
+                    <div class=" offset-8 col-4">
+                        <h4 class="text">Administrator's <br> Signature</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="imzo"></div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-7">
+                <div class="row">
+                    <div class="col-2 offset-6">
+                        <h4 class="text h-100 d-flex align-items-center">Date</h4>
+                    </div>
+                    <div class="col-4">
+                        <h4 class="date-box d-flex align-items-center justify-content-center">{{ i.Date }}</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-5">
+                <div class="row">
+                    <div class="col-5">
+                        <h4 class="text">Test Report From Number</h4>
+                    </div>
+                    <div class="col-7">
+                        <h4 class="report-box">
+                            1234567
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="footer mt-3">
+        <div class="logo-box">
+            <img src="{% static 'app/img/british-council.png'%}" alt="">
+            <img src="{% static 'app/img/idp.png'%}" alt="">
+            <img src="{% static 'app/img/cambridge%20asisment.png'%}" alt="">
+        </div>
+    </div>
+{% endfor %}
+
+</div>
+
+<!-- 
+<script src="js/jquery.js"></script>
+<script src="js/src/popover.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+ -->
+
+</body>
+</html>

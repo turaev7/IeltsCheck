@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ff04dbe6-6393-4d28-88d5-4375d9a522b8" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1oQ3jUc4P2oj1DCvy9SCdRwD3Cf" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff04dbe6-6393-4d28-88d5-4375d9a522b8" name="Default Changelist" comment="" />
+      <created>1613205122859</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613205122859</updated>
+      <workItem from="1613205128626" duration="181000" />
+      <workItem from="1615656271649" duration="4508000" />
+      <workItem from="1615818229553" duration="4579000" />
+      <workItem from="1615953927088" duration="4871000" />
+      <workItem from="1615989899829" duration="907000" />
+      <workItem from="1615991411818" duration="4910000" />
+      <workItem from="1616526177820" duration="2070000" />
+      <workItem from="1616595807540" duration="5910000" />
+      <workItem from="1616748806669" duration="7816000" />
+      <workItem from="1616767941783" duration="3152000" />
+      <workItem from="1616822962636" duration="234000" />
+      <workItem from="1617028203931" duration="5429000" />
+      <workItem from="1617373649668" duration="5544000" />
+      <workItem from="1617632690018" duration="6387000" />
+      <workItem from="1617806326673" duration="4258000" />
+      <workItem from="1617855063231" duration="17915000" />
+      <workItem from="1617890564122" duration="1603000" />
+      <workItem from="1617906377039" duration="4119000" />
+      <workItem from="1617946480783" duration="1253000" />
+      <workItem from="1617976859890" duration="5109000" />
+      <workItem from="1617984868476" duration="40000" />
+      <workItem from="1618066182390" duration="1316000" />
+      <workItem from="1618153512700" duration="3720000" />
+      <workItem from="1618237240958" duration="1065000" />
+      <workItem from="1618309210448" duration="598000" />
+      <workItem from="1619162324293" duration="319000" />
+      <workItem from="1671994182331" duration="8911000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/main.js</url>
+          <line>14</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,344 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+{% extends 'Full' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IELTS</title>
+    <link rel="stylesheet" href="{static 'css/main.css'}">
+    <link rel="stylesheet" href="{static 'css/bootstrap.css'}">
+</head>
+
+<body>
+
+
+<div class="IELTS">
+
+    <div class="logo-box">
+        <img src="images/IELTS-logo.png" alt="">
+    </div>
+
+    <div class="card-top">
+
+        <div class="top my-1">
+            <h2 class="head-text font-weight-bold">Test Report Form</h2>
+            <h4 class="general-training d-flex align-items-center justify-content-center">GENERAL TRAINING</h4>
+        </div>
+
+        <div class="center my-1">
+            <div class="row">
+                <div class="col-1">
+                    <h3 class="note">NOTE</h3>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="bottom my-1">
+            <div class="my-text-box">
+                <h3 class="text">Center Number</h3>
+                <h3 class="box"></h3>
+            </div>
+
+            <div class="my-text-box">
+                <h3 class="text">Date</h3>
+                <h3 class="box"></h3>
+            </div>
+
+            <div class="my-text-box">
+                <h3 class="text">Candidate Number</h3>
+                <h3 class="box">{{ i.one_id }}</h3>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="cadidate-details">
+
+        <div class="top-info">
+            <div class="info-box">
+                <div class="row">
+                    <div class="col-9">
+
+                        <h3 class="head-text font-weight-bold my-1 mb-3">Candidate Details</h3>
+
+                        <div class="info-box my-1">
+                            <div class="info">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h4 class="text">Family Name</h4>
+                                    </div>
+                                    <div class="col-9">
+                                        <h4 class="box">RANKA</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info my-1">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h4 class="text">{{ i.familiya }}</h4>
+                                    </div>
+                                    <div class="col-9">
+                                        <h4 class="box">{{ i.ism }}</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info my-1">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h4 class="text">Candidate ID</h4>
+                                    </div>
+                                    <div class="col-9">
+                                        <h4 class="box w-50">{{ i.one_id }}</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-3">
+                        <div class="avatar-box">
+                            <img src="images/avatar.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-info">
+            <div class="info-box">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="info-box my-1">
+
+                            <div class="info">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h4 class="text">Date of Birth</h4>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="d-flex align-items-center justify-content-between">
+
+                                            <div class="small-info">
+                                                <h4 style="width: 200px" class="box d-flex align-items-center justify-content-center"></h4>
+                                            </div>
+
+                                            <div class="small-info d-flex align-items-center">
+                                                <h4 class="text">Sex (M/F)</h4>
+                                                <h4 class="ml-1 box d-flex align-items-center justify-content-center">F</h4>
+                                            </div>
+
+                                            <div class="small-info d-flex align-items-center">
+                                                <h4 class="text">Scheme Code</h4>
+                                                <h4 class="ml-1 box d-flex align-items-center justify-content-center">Private Candidate</h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h4 class="text">Country or Region of Origin</h4>
+                                    </div>
+                                    <div class="col-9">
+                                        <h4 class="box"></h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info my-1">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h4 class="text">Country of Nationality</h4>
+                                    </div>
+                                    <div class="col-9">
+                                        <h4 class="box">INDIA</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info my-1">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h4 class="text">First Language</h4>
+                                    </div>
+                                    <div class="col-9">
+                                        <h4 class="box">HINDI</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="test-result">
+
+        <h3 class="head-text font-weight-bold">Test Result</h3>
+
+        <div class="results-box">
+
+            <div class="result">
+                <h4 class="text">
+                    Listening
+                </h4>
+                <h4 class="box">
+                    8.5
+                </h4>
+            </div>
+
+            <div class="result">
+                <h4 class="text">
+                    Reading
+                </h4>
+                <h4 class="box">
+                    7.5
+                </h4>
+            </div>
+
+            <div class="result">
+                <h4 class="text">
+                    Writing
+                </h4>
+                <h4 class="box">
+                    7.0
+                </h4>
+            </div>
+
+            <div class="result">
+                <h4 class="text">
+                    Speaking
+                </h4>
+                <h4 class="box">
+                    7.5
+                </h4>
+            </div>
+
+            <div class="result">
+                <h4 class="text">
+                   Overal <br> Band <br> Score
+                </h4>
+                <h4 class="box">
+                    7.5
+                </h4>
+            </div>
+
+            <div class="result">
+                <h4 class="text">
+                    CEFR <br> Level
+                </h4>
+                <h4 class="box">
+                    C1
+                </h4>
+            </div>
+
+        </div>
+    </div>
+    
+{% comment %}     
+    <div class="administrator-comments">
+        <div class="row">
+            <div class="col-7">
+                <h4 class="head-text">Administrator Comments</h4>
+                <div class="comment-box">
+                </div>
+            </div>
+
+            <div class="col-5">
+                <div class="row h-100">
+                    <div class="col-6">
+                        <div class="logo-box">
+                            <h5 class="text">Centre stamp</h5>
+                            <img src="images/unnamed.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="logo-box">
+                            <h5 class="text">Validation stamp</h5>
+                            <img src="images/unnamed.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-7">
+                <div class="row">
+                    <div class=" offset-8 col-4">
+                        <h4 class="text">Administrator's <br> Signature</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="imzo"></div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-7">
+                <div class="row">
+                    <div class="col-2 offset-6">
+                        <h4 class="text h-100 d-flex align-items-center">Date</h4>
+                    </div>
+                    <div class="col-4">
+                        <h4 class="date-box d-flex align-items-center justify-content-center">02/12/21</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-5">
+                <div class="row">
+                    <div class="col-5">
+                        <h4 class="text">Test Report From Number</h4>
+                    </div>
+                    <div class="col-7">
+                        <h4 class="report-box">
+                            1234567
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> {% endcomment %}
+
+
+    <div class="footer mt-3">
+        <div class="logo-box">
+            <img src="images/british-council.png" alt="">
+            <img src="images/idp.png" alt="">
+            <img src="images/cambridge%20asisment.png" alt="">
+        </div>
+    </div>
+
+
+</div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/src/popover.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
+{% block content %}
+
+{% endblock content %}
